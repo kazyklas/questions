@@ -1,0 +1,58 @@
+QWidget {
+    background: #FFFFFF;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+#TitleLabel {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1b892d;
+    margin-bottom: 30px;
+}
+#SetButton {
+    background: #1b892d;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid #1b892d;
+    transition: background 0.2s;
+}
+#SetButton:hover {
+    background: #22752f;
+    border: 2px solid #22752f;
+}
+#QuestionLabel {
+    font-size: 22px;
+    color: #333333;
+    padding: 20px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    min-height: 80px;
+    border: 2px solid #1b892d;
+    margin-bottom: 20px;
+}
+QPushButton {
+    padding: 10px 20px;
+    background: #FFFFFF;
+    color: #1b892d;
+    border: 2px solid #1b892d;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+QPushButton:hover {
+    background: #e8a04f;
+    color: #333333;
+    border: 2px solid #e8a04f;
+}
+QPushButton:disabled {
+    background: #999999;
+    color: #FFFFFF;
+    border: 2px solid #999999;
+}
+#QuestionLabel[alert="true"] {
+    background: #c90000;
+    color: #FFFFFF;
+}
