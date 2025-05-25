@@ -1,8 +1,8 @@
 import sys
-from PyQt5.QtWidgets import (
+from PyQt6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QPushButton, QLabel, QStackedWidget, QHBoxLayout
 )
-from PyQt5.QtCore import Qt
+from PyQt6.QtCore import Qt
 
 def load_question_sets(filename):
     """
@@ -51,7 +51,7 @@ class QuestionPage(QWidget):
 
         # Label to display the current question
         self.question_label = QLabel(self.questions[self.current_index])
-        self.question_label.setAlignment(Qt.AlignCenter)
+        self.question_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.question_label.setObjectName("QuestionLabel")
         self.layout.addWidget(self.question_label)
 
@@ -110,7 +110,7 @@ class SelectionPage(QWidget):
         layout.setContentsMargins(40, 40, 40, 40)
         # Title label
         label = QLabel("Choose a Question Set")
-        label.setAlignment(Qt.AlignCenter)
+        label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         label.setObjectName("TitleLabel")
         layout.addWidget(label)
         # Create a button for each question set
@@ -172,4 +172,4 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

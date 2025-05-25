@@ -1,13 +1,13 @@
 # Question App
 
-A simple PyQt5 application for displaying and navigating through sets of questions. You can easily add or edit questions by modifying a text file.
+A simple PyQt6 application for displaying and navigating through sets of questions. You can easily add or edit questions by modifying a text file.
 
 ---
 
 ## Requirements
 
 - Python 3.7+
-- PyQt5
+- PyQt6
 
 Install dependencies with:
 
