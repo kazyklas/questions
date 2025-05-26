@@ -53,6 +53,8 @@ class QuestionPage(QWidget):
         self.question_label = QLabel(self.questions[self.current_index])
         self.question_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.question_label.setObjectName("QuestionLabel")
+        self.question_label.setWordWrap(True)  # Enable word wrapping
+        self.question_label.setFixedWidth(700)  # Optional: Set a fixed width for consistent wrapping
         self.layout.addWidget(self.question_label)
 
         # Navigation buttons (Previous/Next)
@@ -129,7 +131,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Question App")
-        self.resize(500, 350)
+        self.resize(700, 500)
         self.stacked = QStackedWidget()  # Stack for switching between pages
         self.setCentralWidget(self.stacked)
 
